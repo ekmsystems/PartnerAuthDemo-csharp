@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EKM Tempest</title>
+
+    <meta name="apple-mobile-web-app-title" content="EKM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="apple-touch-icon" href="https://www.ekm.com/images/images-new/logo/touch-icons/touch-icon-80x80.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.ekm.com/images/images-new/logo/touch-icons/touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.ekm.com/images/images-new/logo/touch-icons/touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://www.ekm.com/images/images-new/logo/touch-icons/touch-icon-167x167.png">
+    <link rel="shortcut icon" href="https://www.ekm.com/favicon.ico" />
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+
+    <!-- UIFW jQuery -->
+    <script type="text/javascript" src="https://uifw.ekmsecure.com/latest/scripts/thirdparty/jquery.js"></script>
+    <script type="text/javascript" src="https://uifw.ekmsecure.com/latest/scripts/thirdparty/jquery-ui.js"></script>
+
+    <!-- UIFW Scripts -->
+    <script type="text/javascript" src="https://uifw.ekmsecure.com/latest/scripts/uifw.js"></script>
+    <script type="text/javascript" src="https://uifw.ekmsecure.com/latest/scripts/uifw-thirdparty.js"></script>
+
+    <!-- UIFW Stylesheets -->
+    <link rel="stylesheet" href="https://uifw.ekmsecure.com/latest/styles/uifw.css">
+
+
+    <link rel="stylesheet" href="https://uifw.ekmsecure.com/latest/styles/pages/ekmps-login.css">
+
+</head>
+<body class="uifw-body uifw-body--with-background">
+<div class="ekmps-login-wrapper">
+    <div class="uifw-section">
+        <div class="uifw-section-content">
+
+            <div class="u-ta-c u-pv"><div class="uifw-app-logo uifw-app-logo--ekm-partners uifw-app-logo--medium" title="EKM"></div></div>
+
+            <div class="hr"></div>
+
+            <div class="uifw-message information">
+                <header class="uifw-message-header">Documentation</header>
+                <div class="uifw-message-body">
+                    <p>View our <a href="https://api.ekm.net/documentation" target="_blank">documentation</a> to help you integrate your application.</p>
+                </div>
+            </div><!-- uifw-message -->
+
+            <div class="hr"></div>
+
+            @RenderBody()
+        </div>
+    </div>
+    
+</div><!-- uifw-inner -->
+</body>
+</html>

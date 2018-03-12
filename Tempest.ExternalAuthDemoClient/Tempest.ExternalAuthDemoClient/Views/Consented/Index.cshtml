@@ -1,0 +1,31 @@
+﻿@model ConsentedViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="u-ta-c">
+    <h1>Consent Granted!</h1>
+</div>
+<form asp-action="Refresh">
+    <div class="uifw-form-row">
+        <label class="uifw-label">Access Token</label>
+        <p class="uifw-label-details">This is the token that the client would use to access the API.</p>
+        <textarea asp-for="AccessToken" class="uifw-text-area fw">@Model.AccessToken</textarea>
+    </div>
+    <div class="uifw-form-row">
+        <label class="uifw-label">Expires In</label>
+        <p class="uifw-label-details">Access Tokens expire after a certain amount of time.</p>
+        <input type="text" value="@Model.ExpiresIn" class="uifw-text-field fw" />
+    </div>
+    <div class="uifw-form-row">
+        <label class="uifw-label">Token Type</label>
+        <p class="uifw-label-details">This is the type of token that has been issued. In our case this will likely always be Bearer.</p>
+        <input type="text" value="@Model.TokenType" class="uifw-text-field fw" />
+    </div>
+    <div class="uifw-form-row">
+        <label class="uifw-label">Refresh Token</label>
+        <p class="uifw-label-details">This token can be used to get a new Access Token once the current one expires.</p>
+        <textarea asp-for="RefreshToken" class="uifw-text-area fw">@Model.RefreshToken</textarea>
+    </div>
+    <button type="submit" class="uifw-button affirmative">Refresh Token</button>
+</form>
